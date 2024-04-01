@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+			<beans >
+			 <bean id="emp" class="dom.Employee">
+			  <property name="eid" value="101"></property>
+			  
+			  <property name="list">
+			     <list>
+			        <value>101</value>
+			        <value>102</value>
+			     </list>
+			     
+			  </property>
+			  
+			  <property name="set">
+			     <set>
+			       <value>Amar</value>
+			       <value>Akbar</value>
+			     </set>
+			  
+			  </property>
+			  
+			  <property name="map">
+			    <map>
+			         <entry key="201" value="Anthony"></entry>
+			         <entry key="202" value="John"></entry>
+			    
+			    </map>
+			  
+			  </property>
+			 
+			 </bean>
+			
+			</beans>
+			
+			

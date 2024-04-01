@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="student" class="com.Student">
+		<property name="sid" value="123"></property>
+		<property name="sname" value="Anthony"></property>
+	</bean>
+
+	<bean id="c" class="com.College" autowire="constructor">
+		<constructor-arg value="13" index="0"></constructor-arg>
+		<constructor-arg value="VITS"></constructor-arg>
+
+		<!-- <property name="cid" value="12"></property> <property name="cname" 
+			value="BPUT"></property> -->
+		<!-- <property name="student" ref="s"></property> -->
+	</bean>
+
+	<bean id="student1" class="com.Student">
+		<property name="sid" value="201"></property>
+		<property name="sname" value="Akbar"></property>
+	</bean>
+
+</beans>
+			 

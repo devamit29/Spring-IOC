@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+      <bean id="s" class="com.Student"  scope="singleton">
+		<property name="sid" value="201"></property>
+		<property name="sname" value="Amit"></property>
+		<property name="book" ref="b"></property>
+		<lookup-method name="getBook"/>
+	</bean>
+      
+	<bean id="b" class="com.Book" scope="prototype">
+		<property name="bid" value="1002" ></property>
+		<property name="bname" value="ADVANCE JAVA"></property>
+	</bean>
+
+	
+
+</beans>
